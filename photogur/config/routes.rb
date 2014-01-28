@@ -1,7 +1,11 @@
 Photogur::Application.routes.draw do
 
-  get 'pictures' => 'pictures#index'
-  get 'pictures/:id' => 'pictures#show', as: "picture"
+  # get 'pictures' => 'pictures#index'
+
+  # post 'pictures' => "pictures#create"
+  # get 'pictures/new' => 'pictures#new'
+
+  # get 'pictures/:id' => 'pictures#show', as: "picture"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -16,7 +20,7 @@ Photogur::Application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-    # resources :pictures
+    resources :pictures
 
   # Example resource route with options:
   #   resources :products do
