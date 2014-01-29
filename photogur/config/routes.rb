@@ -22,6 +22,7 @@ Photogur::Application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   resources :pictures
 
+  delete 'pictures/:id' => 'pictures#destroy', as:"picture"
   # get 'pictures/:id/edit' => "pictures#edit", as: "edit_picture"
   # patch 'pictures/:id' => "pictures#update"
   # Example resource route with options:
